@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hilite {
+  background-color: yellow;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="01.02.client-side-javascript.js"></script> <!-- include a library of JavaScript code -->
+</head>
+<body>
+<p>This is a paragraph of HTML</p>
+<script>
+// And this is some client-side JavaScript code
+// literally embedded within the HTML file
+debug("This is a debug message");
+debugJq("This is another debug message");
+</script>
+<p>Here is more HTML.</p>
+
+Hello
+<button onclick="hide(this,true); debug('hide button 1');">Hide1</button>
+<button onclick="hide(this); debug('hide buggon 2');">Hide2</button>
+World
+
+<br><br>
+<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+<br>
+<img src="http://www.calamp.com/sites/all/themes/calamp/images/calamp-logo.jpg">
+
+<script>
+e = document.getElementById("debuglog");
+highlight(e);
+
+// Run the moveon() function 1 minute (60,000 milliseconds) from now.
+setTimeout(moveon, 60000);
+</script>
+</body>
+</html>
